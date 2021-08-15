@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<style>
+		*{
+	margin:0;
+	padding:0;
+    list-style:none;
+	text-decoration:none;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	background:url(Images/background.jpg);
+	background-size:cover;
+	background-position:center;
+	height:100vh;
+}
+nav {
+	position:fixed;
+	width:70px;
+	margin-top:150px;
+	box-shadow:2px 2px 8px 0 rgba(0,0,0,.4);
+}
+nav li{
+	height:60px;
+	position:relative;
+}
+nav li a{
+	color:white;
+	display:block;
+	width:100%;
+	height:100%;
+	line-height:60px;
+	padding-left:25px;
+	border-bottom:1px solid rgba(255,0,0,.4);
+	transition: all .3s linear;
+}
+nav li:nth-child(1) a{
+	background: #426782;
+}
+nav li:nth-child(2) a{
+	background: #1DA1F2;
+}
+nav li:nth-child(3) a{
+	background: #E1306C;
+}
+nav li:nth-child(4) a{
+	background: #2867B2;
+}
+nav li:nth-child(5) a{
+	background: #333;
+}
+nav li:nth-child(6) a{
+	background: #ff0000;
+}
+nav li a i{
+	position:absolute;
+	top:17px;
+	left:20px;
+	font-size:27px;
+}
+nav li a span{
+	font-weight:bold;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	display:none;
+}
+a:hover{
+	z-index:1;
+	width:200px;
+	border-bottom:1px solid rgba(0,0,0,.5);
+	box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
+}
+ul li a:hover span{
+	display:block;
+	padding-left:30%;
+}
+	
+	
+	</style>
+		<meta charset="UTF-8">
+		<title>Fixed Social Media Sidebar Widget </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-compatible" content="ie=edge">
+		<script src="https://kit.fontawesome.com/0d790d9865.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="widget-style.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i><span>Insagram</span></a></li>
+				<li><a href="#"><i class="fab fa-linkedin"></i><span>Linkedin</span></a></li>
+				<li><a href="#"><i class="fab fa-github"></i><span>Github</span></a></li>
+				<li><a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
+			</ul>
+		</nav>
+	
+	</body>
+</html>	
