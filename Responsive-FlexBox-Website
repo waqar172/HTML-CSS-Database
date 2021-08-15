@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<style>
+	*{
+  box-sizing: border-box;
+}
+body{
+	font-family:arial;
+	display:flex;
+	flex-direction:column;
+	margin:0;
+}
+a {
+  text-decoration:none;
+}
+header {
+	background:#808673;
+	display:flex;
+	align-items:center;
+	padding:15px 0;
+}
+header ul {
+	list-style:none;
+	display:flex;
+	margin:0;
+	padding:0;
+}
+header a{
+	color:white;
+}
+#logo {
+	margin:0 auto;
+	font-size:30px;
+}
+#menu li{
+	padding:10px;
+}
+#social-links li{
+	padding:10px;
+}
+#main {
+	display:flex;
+}
+aside{
+	padding:10px;
+	flex:0 0 20vw;
+	background:beige;
+}
+aside ul{
+	list-style:none;
+	padding:0;
+}
+aside ul a{
+	color:#808673;
+	padding:10px;
+	display:block;
+	border-bottom:1px solid grey;
+}
+aside img{
+	width:100%;
+}
+article{
+	padding:10px;
+}
+.services-container{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+.service-box{
+	border: 1px solid #eee;
+	flex-basis:32%;
+	max-width:370px;
+	padding:10px;
+	margin-bottom:15px;
+	display:flex;
+	flex-direction:column;
+}
+.service-box img{
+	width:100%;
+}
+.service-box h3{
+	margin:5px 0 10px;
+}
+.service-box p{
+	margin:0 0 10px;
+}
+.call-to-action{
+	align-self:flex-start;
+	margin-top:auto;
+}
+.call-to-action a{
+	background:grey;
+	border:2px solid transparent;
+	color:white;
+	padding: 8px 13px;
+	display:block;
+}
+.call-to-action a:hover{
+	background:transparent;
+	border:2px solid grey;
+	color:red;
+}
+footer{
+	background:#808673;
+	color:white;
+	padding:3px 0px
+}
+.Name p{
+	text-align:center;
+}
+@media screen and (max-width:850px){
+	.service-box{
+	flex-basis:48%;
+	}
+	aside{
+	flex:0 0 30vw;
+ }
+}
+@media screen and (max-width:600px){
+	header{
+		flex-direction:column;
+	}
+	#logo{
+		order:-1;
+	}
+	#main{
+		flex-direction:column;
+	}
+	article{
+		order:-1;
+	}
+	.services-container{
+		flex-direction:column;
+		align-items:center;
+	}
+	h2{
+		text-align:center;
+	}
+}
+	
+	
+	</style>
+	
+		<meta charset="UTF-8">
+		<title>FlexBox New Project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-compatible" content="ie=edge">
+		<script src="https://kit.fontawesome.com/0d790d9865.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="FlexBox Stylesheet.css">
+	</head>
+	<body>
+	<header>
+		<nav id="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id="logo">
+			<a href="">My Portfolio</a>
+		</div>
+		<nav id="social-links">
+			<ul>
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="main">
+		<aside class="">
+			<ul>
+				<li><a href="#">Some Links</a></li>
+				<li><a href="#">Some Links</a></li>
+				<li><a href="#">Some Links</a></li>
+				<li><a href="#">Some Links</a></li>
+				<li><a href="#">Some Links</a></li>
+			</ul>
+			<img src="Images/aside.jpg" alt="">
+		</aside>
+		<article class="">
+		<h2>Welcome to Our Website</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<h2>Our Services</h2>
+		<div class="services-container">
+		<div class="service-box">
+		<div class="service-img">
+		<img src="Images/Web-development.jpg" alt="">
+		  </div>
+		  <div class="service-title">
+		<h3>Web Development</h3>
+		</div>
+		<div class="service-disc">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text</p>
+		</div>
+		<div class="call-to-action">
+		  <a href="">Read more</a>
+		</div>
+		</div>
+		
+		<div class="service-box">
+		<div class="service-img">
+		<img src="Images/graphic-design.jpg" alt="">
+		  </div>
+		  <div class="service-title">
+		<h3>Graphic Design</h3>
+		</div>
+		<div class="service-disc">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+		</div>
+		<div class="call-to-action">
+		  <a href="">Read more</a>
+		</div>
+		</div>
+		
+		<div class="service-box">
+		<div class="service-img">
+		<img src="Images/App-development.jpg" alt="">
+		  </div>
+		  <div class="service-title">
+		<h3>App Development</h3>
+		</div>
+		<div class="service-disc">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+		</div>
+		<div class="call-to-action">
+		  <a href="">Read more</a>
+		</div>
+		</div>
+		
+		</div>
+		</article>
+	</div>
+	<footer>
+		© Copyright
+		<div class="Name">
+		<p>Made by Waqar Khan</p>
+		</div>
+	</footer>
+	
+	</body>
+</html>	
